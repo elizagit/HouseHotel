@@ -1,0 +1,80 @@
+﻿@model HouseHotel.Models.Property
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Property</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnitDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnitDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceMidSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceMidSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceLowSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceLowSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceHighSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceHighSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepositRequired)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepositRequired)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

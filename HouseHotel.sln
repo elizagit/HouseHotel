@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HouseHotel", "HouseHotel\HouseHotel.csproj", "{B05D915F-2254-4486-8BB0-006E6F7B083C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{3BD800B0-B897-4DB4-9E4D-2A23A37A9472}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{58EBCD4B-B391-4428-B6EF-1E89F6C635B8}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\HouseHotel-WAWS-dev.json = PublishScripts\Configurations\HouseHotel-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{61CC3C15-8609-430A-AA98-FCD822B4037B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B05D915F-2254-4486-8BB0-006E6F7B083C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05D915F-2254-4486-8BB0-006E6F7B083C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05D915F-2254-4486-8BB0-006E6F7B083C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05D915F-2254-4486-8BB0-006E6F7B083C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{58EBCD4B-B391-4428-B6EF-1E89F6C635B8} = {3BD800B0-B897-4DB4-9E4D-2A23A37A9472}
+	EndGlobalSection
+EndGlobal
