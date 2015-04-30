@@ -4,7 +4,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace HouseHotel.DAL
 {
-    public class HomeRentalContext : DbContext
+    public class HomeRentalContext : DbContext, HouseHotel.DAL.IHomeRentalContext
     {
         
         public HomeRentalContext() : base("HomeRentalContext")

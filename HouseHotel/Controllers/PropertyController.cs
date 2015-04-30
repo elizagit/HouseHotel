@@ -18,7 +18,10 @@ namespace HouseHotel.Controllers
         // GET: Property
         public ActionResult Index()
         {
-            return View(db.Properties.ToList());
+            
+            var properties = db.Properties.ToList();  //list the properties in the database and put them into list called properties
+            return View(properties);   //want to render an html list of propertiesd using the index view
+
         }
 
         // GET: Property/Details/5
@@ -33,7 +36,7 @@ namespace HouseHotel.Controllers
             {
                 return HttpNotFound();
             }
-            return View(property);
+            return View(property);  // want to render an html property using Details view
         }
 
         // GET: Property/Create

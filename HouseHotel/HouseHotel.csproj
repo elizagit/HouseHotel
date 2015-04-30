@@ -197,6 +197,7 @@
     <Compile Include="Controllers\ReservationController.cs" />
     <Compile Include="DAL\HomeRentalContext.cs" />
     <Compile Include="DAL\HomeRentalInitializer.cs" />
+    <Compile Include="DAL\IHomeRentalContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
